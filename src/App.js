@@ -14,7 +14,7 @@ function App() {
           <Route exact path="/" element={<VehicleListComponent />}></Route>
           <Route path="/vehiculos" element={<VehicleListComponent />}></Route>
           <Route
-            path="/crear-vehiculo"
+            path="/agregar-vehiculo"
             element={<VehicleCreateComponent />}
           ></Route>
         </Routes>

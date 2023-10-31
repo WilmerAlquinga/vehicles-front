@@ -10,6 +10,10 @@ class VehicleService {
   create(vehicle) {
     return axios.post(VEHICLE_SERVICE_BASE_URL, vehicle);
   }
+
+  getForMaintenance(date) {
+    return axios.get(VEHICLE_SERVICE_BASE_URL + "/maintenance" + date);
+  }
 }
 
 export default new VehicleService();
